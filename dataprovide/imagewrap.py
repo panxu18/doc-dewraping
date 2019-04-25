@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import random
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 
 
 def random_crop(image, crop_size):

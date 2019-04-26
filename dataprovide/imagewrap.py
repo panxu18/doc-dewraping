@@ -33,10 +33,6 @@ v_y = random.uniform(-1,1)
 v_x = v_x/(np.sqrt(v_x*v_x + v_y*v_y))
 v_y = v_y/(np.sqrt(v_x*v_x + v_y*v_y))
 print(v_x,v_y)
-
-
-
-
 # plt.matshow(weight[0], cmap='autumn')
 # plt.matshow(weight[1],cmap='autumn')
 # plt.matshow(weight[2],cmap='autumn')
@@ -53,7 +49,6 @@ mesh = np.stack((mesh_x, mesh_y), axis=-1)
 mesh_d = np.abs(np.dot(mesh[:,:,],[v_y,-v_x])-np.dot(point,[v_y,-v_x]))
 mesh_d = normalize(mesh_d)
 mesh_d = np.reshape(mesh_d,[result_size,result_size,1])
-print(np.shape(mesh_d))
 #flod
 # alpha = [0.05,0.1,0.5]
 # weight = alpha/(mesh_d+alpha)

@@ -30,11 +30,6 @@ def image_warp():
     vector_x = vector_x / vector_mod
     vector_y = vector_y / vector_mod
 
-    # for i in range(15):
-    #     cfg.alpha = 1.0 + i * 0.2
-    #     result = wrap(img, cfg.alpha, point[0], point[1], vector_x, vector_y, cfg.crop_size, cfg.padding, cfg.iscurl)
-    #     cv2.imwrite(str(round(cfg.alpha,1)) + 'test.jpg', result)
-
     paddings = np.array(cfg.paddings)
     for i in range(5):
         iscurl = np.random.randint(low=0, high=2, size=1)[0]
